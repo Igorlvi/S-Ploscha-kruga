@@ -20,6 +20,8 @@ print ("Поки Ви звіряєте свій розв'язок із розв'
 turtle.left(90)
 turtle.circle(r*37)
 turtle.hideturtle()
+style = ('Courier', 15, 'italic')
+turtle.write(" Turtle накреслила\n Вам ваше коло", font=style, align='left')
 
 # matplotlib
 plt.figure(figsize=(r+2,r+2))
