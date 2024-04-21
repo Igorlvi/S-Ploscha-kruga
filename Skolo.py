@@ -16,13 +16,14 @@ print("S Площа = %.2f" % (pi * r ** 2))
 print("L Довжина = %.2f" % (2*pi * r ))
 print ("Поки Ви звіряєте свій розв'язок із розв'язком даної програми, черепашка та matplotlib накреслили Вам ваше коло . Знайдіть їх у себе на моніторі.")
 
+
 # turtle
 turtle.left(90)
 turtle.circle(r*37)
 turtle.hideturtle()
 style = ('Courier', 15, 'italic')
 turtle.write(" Turtle накреслила\n Вам ваше коло", font=style, align='left')
-
+turtle.title('Ваше коло')
 # matplotlib
 plt.figure(figsize=(r+2,r+2))
 circle1=plt.Circle(xy=(0.0,0.0), radius= r, color='grey', linewidth=1,fill = False)
